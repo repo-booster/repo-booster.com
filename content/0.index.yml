@@ -1,0 +1,152 @@
+title: Repo-Booster - Supercharge Your Git Project Today
+description: Repo-Booster is a powerful tool to boost your GitHub repositorys visibility and engagement with premium SEO, analytics, and ai automation tools.
+navigation: ''
+hero:
+  title: Boost Your GitHub Presence In Seconds
+  description: Achieve 90% faster growth for your projects with our guaranteed our repository enhancement tools.
+  headline:
+    label: Built For Developers
+    to: https://github.com/Gerome-Elassaad/repo-booster
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
+  links:
+    - label: Get started
+      to: /signup
+      size: xl
+      color: black
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+    - label: Continue with GitHub
+      icon: i-simple-icons-github
+      size: xl
+      color: gray
+      to: https://github.com/apps/repo-booster
+      target: _blank
+sections:
+  - title: The power of our service
+    description: Repo-Booster empowers developers with tools to stand out in the crowded open-source ecosystem.
+    id: features
+    align: left
+    features:
+      - name: Easy to use
+        description: An intuitive interface to analyze and boost your repositories in just a few clicks.
+        icon: i-heroicons-cog
+      - name: Reliable Insights
+        description: Actionable analytics to help you optimize and grow your project.
+        icon: i-heroicons-check
+      - name: Secure Integration
+        description: Built with security in mind, Repo-Booster ensures your data is safe.
+        icon: i-heroicons-lock-closed
+    links:
+      - label: Explore components
+        to: https://docs.repo-booster.com/features-overview/features
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+  - title: Tools That Drive Growth
+    description: Powerful tools designed to help you increase visibility, improve engagement, and build a loyal contributor base.
+    align: right
+    features:
+      - name: SEO Optimizer
+        description: Analyze and optimize your repositories for better search rankings.
+        icon: i-heroicons-chart-bar
+      - name: Social Media Automation
+        description: Use our custom ai bots to generate personalized posts for your projects and share them effortlessly.
+        icon: i-heroicons-Share
+      - name: Star Growth Tracking
+        description: Set goals and track your repositorys growth in real time.
+        icon: i-heroicons-star
+    links:
+      - label: Docs
+        to: https://docs.repo-booster.com
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+logos:
+  title: Trusted by the world's best
+  icons:
+    - i-simple-icons-dev.to
+    - i-simple-icons-openai
+    - i-simple-icons-github
+    - i-simple-icons-gitlab
+    - i-simple-icons-bitbucket
+features:
+  title: Why Choose Repo-Booster?
+  description: Repo-Booster integrates seamlessly integrating the GitHub API and other platforms to automate growth tasks and insights.
+  items:
+    - title: Repository SEO Analysis
+      description: The SEO analysis tool evaluates your repository’s structure, metadata, and content for SEO performance. It highlights areas of improvement to help your project rank higher on search engines and be more discoverable on GitHub.
+      icon: i-heroicons-Document-magnifying-glass
+    - title: Readme SEO Scanner
+      description: This feature analyzes your README file to identify SEO opportunities, readability issues, and overall quality. It provides AI-powered recommendations for optimizing the file.
+      icon: i-heroicons-book-open
+    - title: Star Growth Tracking
+      description: Start tracking the growth of stars on your GitHub repository over time. Allows you to set goals, receive progress updates, and follow trends.
+      icon: i-heroicons-star
+    - title: Social Media Integration
+      description: Automatically connects your repository to popular social media platforms like Facebook, X (Twitter), LinkedIn, Instagram, Medium and more. You can schedule posts, automate content, and track engagement.
+      icon: i-heroicons-rocket-launch
+    - title: Roadmap
+      description: Customise your roadmap where you can learn about what features were working on, what stage there in, and when we expect to bring them to you.
+      icon: i-heroicons-map
+    - title: SEO Toolbox
+      description: This tool is a all in one SEO Toolbox designed for Keyword analysis, meta tag generator, Description Writer and much more.
+      icon: i-heroicons-presentation-chart-bar
+testimonials:
+  headline: Testimonials
+  title: What our customers are saying.
+  description: Real feedback from developers who have grown their projects using Repo-Booster.
+  items:
+    - quote: Repo-Booster helped my repository gain visibility and increased stars by 40% in just a month!
+      author:
+        name: Nathan Hammond
+        description: CEO at Aptitude Audits
+        avatar:
+          src: https://i.pravatar.cc/120?img=1
+          loading: lazy
+    - quote: The social media automation feature is a game-changer. It saves so much time!
+      author:
+        name: Emily Cook
+        description: Senior Full Stack Developer
+        avatar:
+          src: https://i.pravatar.cc/120?img=7
+          loading: lazy
+    - quote: The star growth tracker keeps me motivated and helps me set realistic goals for my project.
+      author:
+        name: Cameron Sheppard
+        description: Lead Developer at Data Lock Solutions
+        avatar:
+          src: https://i.pravatar.cc/120?img=3
+          loading: lazy
+    - quote: I never realized how much a proper README SEO could impact my project. Repo-Booster showed me the way!
+      author:
+        name: Destinee Edwards
+        description: Senior Software Engineer
+        avatar:
+          src: https://i.pravatar.cc/120?img=5
+          loading: lazy
+    - quote: This tool is great especially the social media automation tools, I love the fact that it creates Seo based posts based on latest repo updates automatically without needing to tell it what the updats were.
+      author:
+        name: Kyle Mondane
+        description: Open Source Developer
+        avatar:
+          src: https://i.pravatar.cc/120?img=8
+          loading: lazy
+    - quote: I believe the team at Repo-Booster is on to something with this tool this is definetely going to help for future developers.
+      author:
+        name: Hayley Richardson
+        description: Junior Full Stack Developer
+        avatar:
+          src: https://i.pravatar.cc/120?img=9
+          loading: lazy
+cta:
+  title: Get started today
+  description: Never a better time to grow your projects audience then right now.
+  links:
+    - label: Upgrade to Pro
+      size: xl
+      color: black
+      to: /pricing

@@ -1,0 +1,127 @@
+---
+title: Usage
+description: Learn how to use and configure Repo-Booster to edit this site.
+---
+
+Repo-Booster is a powerful tool designed to enhance your GitHub repositories' visibility and performance. This documentation provides guidance on how to utilize Repo-Booster features effectively and configure your app to meet your needs.
+
+::callout
+---
+icon: i-heroicons-light-bulb
+target: _blank
+to: https://repo-booster.com/docs/usage
+---
+Learn more about configuring Repo-Booster for maximum impact!
+::
+
+## Writing Content
+
+Using Repo-Booster is simple. Start by connecting your GitHub account and selecting the repository you want to boost. From there, you can access tools for SEO analysis, social media integration, star growth tracking, and more.
+
+::callout{icon="i-heroicons-light-bulb"}
+Repo-Booster integrates seamlessly with GitHub and other platforms to automate growth tasks and insights.
+::
+
+## App Configuration
+
+Repo-Booster allows for extensive customization through its dashboard and configuration files. Below are some key configurations.
+
+### Header
+
+```ts [app.config.ts]
+export default defineAppConfig({
+  header: {
+    logo: {
+      light: {
+        src: '/images/logo-light.png',
+        alt: 'Repo-Booster',
+        class: 'tw-h-8'
+      },
+      dark: {
+        src: '/images/logo-dark.png',
+        alt: 'Repo-Booster',
+        class: 'tw-h-8'
+      }
+    },
+    search: true,
+    colorMode: true,
+    links: [{
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/Gerome-Elassaad/repo-booster',
+      target: '_blank',
+      'aria-label': 'Star on GitHub'
+    }]
+  }
+})
+```
+
+### Footer
+
+```ts [app.config.ts]
+export default defineAppConfig({
+  footer: {
+    credits: 'Copyright © 2025 Repo-Booster',
+    colorMode: false,
+    links: [{
+      icon: 'https://repo-booster.com/Repo-Booster-icon.png',
+      to: 'https://repo-booster.com',
+      target: '_blank',
+      'aria-label': 'Repo-Booster Website'
+    }, {
+      icon: 'i-simple-icons-discord',
+      to: 'https://discord.com/invite/repo-booster',
+      target: '_blank',
+      'aria-label': 'Repo-Booster Discord Community'
+    }, {
+      icon: 'i-simple-icons-x',
+      to: 'https://x.com/repo_booster',
+      target: '_blank',
+      'aria-label': 'Repo-Booster on X'
+    }, {
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/Gerome-Elassaad/repo-booster',
+      target: '_blank',
+      'aria-label': 'Repo-Booster GitHub'
+    }]
+  }
+})
+```
+
+### Table of Contents
+
+```ts [app.config.ts]
+export default defineAppConfig({
+  toc: {
+    title: 'Table of Contents',
+    bottom: {
+      title: 'Community',
+      edit: 'https://github.com/repo-booster/docs/edit/main/',
+      links: [{
+        icon: 'i-heroicons-star',
+        label: 'Star on GitHub',
+        to: 'https://github.com/repo-booster',
+        target: '_blank',
+      }, {
+        icon: 'i-heroicons-book-open',
+        label: 'Repo-Booster Docs',
+        to: 'https://repo-booster.com/docs',
+        target: '_blank',
+      }, {
+        icon: 'i-simple-icons-repo',
+        label: 'Upgrade to Pro',
+        to: 'https://repo-booster.com/pricing',
+        target: '_blank',
+      }]
+    }
+  }
+})
+```
+
+::callout
+---
+icon: i-heroicons-light-bulb
+target: _blank
+to: https://docs.repo-booster.com/
+---
+Customize Repo-Booster settings easily through our dashboard or configuration files.
+::

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="fade" cx="50%" cy="50%" r="75%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.2)" />
+      <stop offset="100%" stop-color="rgba(0, 0, 0, 0.9)" />
+    </radialGradient>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#fade)" />
+
+  <g fill="rgba(255, 255, 255, 0.1)">
+    <circle cx="10" cy="10" r="1" />
+    <circle cx="30" cy="10" r="1" />
+    <circle cx="50" cy="10" r="1" />
+    <circle cx="70" cy="10" r="1" />
+    <circle cx="90" cy="10" r="1" />
+    <circle cx="10" cy="30" r="1" />
+    <circle cx="30" cy="30" r="1" />
+    <circle cx="50" cy="30" r="1" />
+    <circle cx="70" cy="30" r="1" />
+    <circle cx="90" cy="30" r="1" />
+  </g>
+</svg>

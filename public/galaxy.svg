@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Gradient Background -->
+    <radialGradient id="galaxy-gradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1b2735" />
+      <stop offset="70%" stop-color="#090a0f" />
+    </radialGradient>
+
+    <!-- Starfield -->
+    <pattern id="starfield" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="20" r="1" fill="white" opacity="0.8" />
+      <circle cx="50" cy="60" r="1.5" fill="white" opacity="0.6" />
+      <circle cx="90" cy="30" r="0.8" fill="white" opacity="0.7" />
+      <circle cx="80" cy="80" r="1.2" fill="white" opacity="0.9" />
+      <circle cx="30" cy="90" r="1" fill="white" opacity="0.5" />
+    </pattern>
+
+    <!-- Nebula Overlay -->
+    <radialGradient id="nebula" cx="30%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="rgba(255, 0, 255, 0.2)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+  </defs>
+
+  <!-- Galaxy Background -->
+  <rect width="100%" height="100%" fill="url(#galaxy-gradient)" />
+
+  <!-- Starfield Layer -->
+  <rect width="100%" height="100%" fill="url(#starfield)" />
+
+  <!-- Nebula Layer -->
+  <circle cx="600" cy="800" r="400" fill="url(#nebula)" />
+  <circle cx="1400" cy="300" r="500" fill="rgba(0, 255, 255, 0.3)" />
+</svg>
