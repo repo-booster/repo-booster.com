@@ -1,4 +1,4 @@
-![Untitled design (6)](https://github.com/user-attachments/assets/c2c65088-2679-41c5-b7c0-e204a2c45e47)
+![social-card](https://github.com/user-attachments/assets/c2c65088-2679-41c5-b7c0-e204a2c45e47)
 
 ---
 
