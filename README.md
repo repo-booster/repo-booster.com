@@ -1,6 +1,5 @@
-![repo-booster com](https://github.com/user-attachments/assets/cd07ce27-68ae-4de1-917c-e71bb1fe926b)
+![Repo-Booster](https://github.com/user-attachments/assets/9f49e293-f2d5-465b-917f-0aa564d2f753)
 ---
-
 ## What is Repo-Booster?
 
 - **Repo-Booster** is a GitHub tool driven by GitHub data insights to boost visibility, collaboration, and growth. It provides practical tools and automation for developers, teams, and open-source projects of all sizes.
@@ -42,7 +41,6 @@
 
 ---
 
-![Post](https://github.com/user-attachments/assets/25090888-2b5c-418d-94cc-f0e11ee9b280)
 
 ---
 
