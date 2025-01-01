@@ -1,74 +1,190 @@
 export default defineAppConfig({
   ui: {
     primary: 'green',
-    gray: 'cool',
-    button: {
-      rounded: 'rounded-lg',
+    gray: 'slate',
+    avatar: {
       default: {
-        size: 'lg',
-        variant: 'primary',
-        styles: 'text-white bg-[#00DC82] hover:bg-[#00c874] focus:ring focus:ring-green-200',
-      },
-      secondary: {
-        size: 'lg',
-        styles: 'text-[#00DC82] bg-white border border-[#00DC82] hover:bg-green-50 focus:ring focus:ring-green-200',
-      },
-      tertiary: {
-        size: 'sm',
-        styles: 'text-gray-600 bg-gray-100 hover:bg-gray-200 focus:ring focus:ring-gray-300',
-      },
-      danger: {
-        size: 'md',
-        styles: 'text-white bg-red-600 hover:bg-red-500 focus:ring focus:ring-red-300',
-      },
+        icon: 'i-ph-image'
+      }
+    },
+    button: {
+      default: {
+        loadingIcon: 'i-ph-spinner'
+      }
     },
     input: {
       default: {
-        size: 'md',
-        styles: 'rounded-lg border-gray-300 focus:ring focus:ring-green-200 dark:focus:ring-green-400',
-      },
-      error: {
-        size: 'md',
-        styles: 'rounded-lg border-red-600 focus:ring focus:ring-red-300',
-      },
+        loadingIcon: 'i-ph-spinner'
+      }
+    },
+    select: {
+      default: {
+        loadingIcon: 'i-ph-spinner',
+        trailingIcon: 'i-ph-caret-down'
+      }
+    },
+    selectMenu: {
+      default: {
+        selectedIcon: 'i-ph-check'
+      }
+    },
+    notification: {
+      default: {
+        closeButton: {
+          icon: 'i-ph-x'
+        }
+      }
+    },
+    commandPalette: {
+      default: {
+        icon: 'i-ph-magnifying-glass',
+        loadingIcon: 'i-ph-spinner',
+        selectedIcon: 'i-ph-check',
+        emptyState: {
+          icon: 'i-ph-magnifying-glass'
+        },
+        closeButton: {
+          icon: 'i-ph-x'
+        }
+      }
+    },
+    table: {
+      default: {
+        sortAscIcon: 'i-ph-sort-ascending',
+        sortDescIcon: 'i-ph-sort-descending',
+        sortButton: {
+          icon: 'i-ph-list'
+        },
+        loadingState: {
+          icon: 'i-ph-spinner'
+        },
+        emptyState: {
+          icon: 'i-ph-database'
+        }
+      }
+    },
+    pagination: {
+      default: {
+        prevButton: {
+          icon: 'i-ph-arrow-left'
+        },
+        nextButton: {
+          icon: 'i-ph-arrow-right'
+        }
+      }
     },
     card: {
-      rounded: 'rounded-lg',
-      shadow: 'shadow-lg',
-      padding: 'p-6',
-      hover: 'hover:shadow-xl',
-      border: 'border border-gray-200 dark:border-gray-700',
+      rounded: 'rounded-xl'
     },
-    footer: {
-      top: {
-        wrapper: 'border-t border-gray-200 dark:border-gray-700',
-        container: 'py-12 lg:py-20 bg-gray-50 dark:bg-gray-900',
+    tooltip: {
+      background: '!bg-background',
+      popper: {
+        strategy: 'absolute'
+      }
+    },
+    breadcrumb: {
+      divider: {
+        base: 'w-4 h-4'
       },
-      bottom: {
-        wrapper: 'border-t border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 bg-white',
-        container: 'py-4 text-sm text-gray-500 dark:text-gray-400',
-      },
+      default: {
+        divider: 'i-ph-caret-right'
+      }
+    },
+    // `@nuxt/ui-pro` specific
+    variables: {
+      dark: {
+        background: 'var(--color-gray-950)'
+      }
+    },
+    icons: {
+      dark: 'i-ph-moon',
+      light: 'i-ph-sun',
+      search: 'i-ph-magnifying-glass',
+      external: 'i-ph-arrow-up-right',
+      chevron: 'i-ph-caret-down',
+      hash: 'i-ph-hash'
+    },
+    header: {
+      wrapper: 'lg:mb-0 lg:border-0',
       links: {
-        styles: 'text-gray-500 hover:text-gray-900 dark:hover:text-white',
+        trailingIcon: {
+          base: 'w-4 h-4'
+        },
+        popover: {
+          popper: {
+            strategy: 'absolute'
+          },
+          ui: {
+            width: 'w-[16rem]'
+          }
+        }
       },
+      popover: {
+        links: {
+          active: 'dark:bg-gray-950/50',
+          inactive: 'dark:hover:bg-gray-950/50'
+        }
+      },
+      button: {
+        icon: {
+          open: 'i-ph-list',
+          close: 'i-ph-x'
+        }
+      }
+    },
+    navigation: {
+      accordion: {
+        button: {
+          trailingIcon: {
+            base: 'w-4 h-4'
+          }
+        }
+      }
     },
     page: {
-      hero: {
-        wrapper: 'py-24 bg-gradient-to-r from-green-50 to-green-100 dark:from-gray-800 dark:to-gray-900',
-        heading: 'text-4xl font-bold text-gray-900 dark:text-white',
-        subheading: 'text-lg text-gray-600 dark:text-gray-300',
-      },
-      content: {
-        container: 'max-w-7xl mx-auto px-6 lg:px-8',
-        text: 'text-base text-gray-700 dark:text-gray-300',
-      },
+      card: {
+        to: 'dark:hover:bg-gray-900/50'
+      }
     },
-    modal: {
-      overlay: 'fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70',
-      container: 'bg-white dark:bg-gray-800 rounded-lg shadow-lg',
-      header: 'text-lg font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 p-4',
-      body: 'p-4 text-gray-700 dark:text-gray-300',
-      footer: 'p-4 border-t border-gray-200 dark:border-gray-700 flex justify-end',
-    },
-  },
-});
+    content: {
+      search: {
+        fileIcon: {
+          name: 'i-ph-file-text'
+        }
+      },
+      toc: {
+        button: {
+          trailingIcon: {
+            base: 'w-4 h-4'
+          }
+        }
+      },
+      surround: {
+        icon: {
+          prev: 'i-ph-arrow-left',
+          next: 'i-ph-arrow-right'
+        }
+      },
+      collapsible: {
+        button: {
+          icon: {
+            base: 'w-3 h-3'
+          }
+        }
+      },
+      prose: {
+        code: {
+          button: {
+            icon: {
+              copy: 'i-ph-copy',
+              copied: 'i-ph-check-square'
+            }
+          },
+          icon: {
+            terminal: 'i-ph-terminal-window'
+          }
+        }
+      }
+    }
+  }
+})
