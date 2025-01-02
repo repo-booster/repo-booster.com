@@ -10,7 +10,7 @@ hero:
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
-      to: /signup
+      to: https://app.repo-booster.com/login
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -66,7 +66,7 @@ sections:
         size: md
         class: ml-8
 logos:
-  title: Trusted by the world's best
+  title: Trusted by the worlds best
   icons:
     - i-simple-icons-dev.to
     - i-simple-icons-openai
