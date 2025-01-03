@@ -1,56 +1,46 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () =>
-  queryContent('/').findOne()
-)
+import type { BlogPost } from '~/types'
+const { data: page } = await useAsyncData('blog', () => queryContent('/blog').findOne())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
-
+const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>('/blog')
+  .where({ _extension: 'md' })
+  .sort({ date: -1 })
+  .find())
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description,
   ogDescription: page.value.description
 })
+defineOgImageComponent('Saas')
 </script>
-
 <template>
   <UContainer>
-    <!-- Embedded Arcade Application as Hero -->
-    <section class="hero-section">
-      <div
-        style="
-          position: relative;
-          padding-bottom: calc(50.520833333333336% + 41px);
-          height: 0;
-          width: 100%;
-        "
-      >
-        <iframe
-          src="https://demo.arcade.software/MLKlmdtVFAPa5s52JVRN?embed&embed_mobile=inline&embed_desktop=inline&show_copy_link=true"
-          title="Repo-Booster - Dashboard"
-          style="
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            color-scheme: light;
-          "
-          loading="lazy"
-          allow="clipboard-write"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
+    <UPageHeader
+      v-bind="page"
+      class="py-[50px]"
+    />
+    <UPageBody>
+      <UBlogList>
+        <UBlogPost
+          v-for="(post, index) in posts"
+          :key="index"
+          :to="post._path"
+          :title="post.title"
+          :description="post.description"
+          :image="post.image"
+          :date="new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' })"
+          :authors="post.authors"
+          :badge="post.badge"
+          :orientation="index === 0 ? 'horizontal' : 'vertical'"
+          :class="[index === 0 && 'col-span-full']"
+          :ui="{
+            description: 'line-clamp-2'
+          }"
         />
-      </div>
-    </section>
+      </UBlogList>
+    </UPageBody>
   </UContainer>
 </template>
-
-<style scoped>
-.hero-section {
-  margin-bottom: 2rem;
-}
-</style>
