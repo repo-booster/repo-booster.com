@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useColorMode } from '@vueuse/core'
+import { useHead, useSeoMeta } from '#app'
+
 const colorMode = useColorMode()
 
 const color = computed(() => (colorMode.value === 'dark' ? '#77A1D3' : 'white'))
@@ -7,15 +11,15 @@ useHead({
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { key: 'theme-color', name: 'theme-color', content: color },
+    { name: 'theme-color', content: color.value },
     { property: 'og:title', content: 'Repo-Booster - Supercharge Your Git Project Today' },
-    { property: 'og:description', content: 'Repo-Booster is a powerful tool to boost your GitHub repository\'s visibility and engagement with premium SEO, analytics, and AI automation tools.' },
-    { property: 'og:image', content: 'https://repo-booster.com/social-card.png' },
+    { property: 'og:description', content: 'Repo-Booster is a powerful tool to boost your GitHub repository\'s visibility and engagement.' },
+    { property: 'og:image', content: 'https://repo-booster.com/Post.png' },
     { property: 'og:site_name', content: 'Repo-Booster' },
     { property: 'og:url', content: 'https://repo-booster.com' },
     { property: 'twitter:title', content: 'Repo-Booster - Supercharge Your Git Project Today' },
-    { property: 'twitter:description', content: 'Repo-Booster is a powerful tool to boost your GitHub repository\'s visibility and engagement with premium SEO, analytics, and AI automation tools.' },
-    { property: 'twitter:image', content: 'https://repo-booster.com/social-card.png' },
+    { property: 'twitter:description', content: 'Repo-Booster is a powerful tool to boost your GitHub repository\'s visibility and engagement.' },
+    { property: 'twitter:image', content: 'https://repo-booster.com/Post.png' },
     { name: 'twitter:card', content: 'summary_large_image' }
   ],
   link: [{ rel: 'icon', href: '/favicon.ico' }],
@@ -27,18 +31,16 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s - Repo-Booster - Enhance GitHub Repository Visibility & SEO for Growth',
-  meta: [
-    { name: 'description', content: 'Repo-Booster is a powerful tool to boost your GitHub repository\'s visibility and engagement with premium SEO, analytics, and AI automation tools.' },
-    { property: 'og:site_name', content: 'Repo-Booster' },
-    { property: 'og:image', content: 'https://repo-booster.com/social-card.png' },
-    { property: 'og:title', content: 'Repo-Booster - Supercharge Your Git Project Today' },
-    { property: 'og:description', content: 'Repo-Booster is a powerful tool to boost your GitHub repository\'s visibility and engagement with premium SEO, analytics, and AI automation tools.' },
-    { property: 'og:url', content: 'https://repo-booster.com' },
-    { property: 'twitter:title', content: 'Repo-Booster - Supercharge Your Git Project Today' },
-    { property: 'twitter:description', content: 'Repo-Booster is a powerful tool to boost your GitHub repository\'s visibility and engagement with premium SEO, analytics, and AI automation tools.' },
-    { property: 'twitter:image', content: 'https://repo-booster.com/social-card.png' },
-    { name: 'twitter:card', content: 'summary_large_image' }
-  ]
+  description: 'Repo-Booster boosts GitHub repository visibility and engagement with SEO, analytics, and automation tools.',
+  ogSiteName: 'Repo-Booster',
+  ogImage: 'https://repo-booster.com/social-card.png',
+  ogTitle: 'Repo-Booster - Supercharge Your Git Project Today',
+  ogDescription: 'Repo-Booster boosts GitHub repository visibility and engagement with SEO, analytics, and automation tools.',
+  ogUrl: 'https://repo-booster.com',
+  twitterTitle: 'Repo-Booster - Supercharge Your Git Project Today',
+  twitterDescription: 'Repo-Booster boosts GitHub repository visibility and engagement with SEO, analytics, and automation tools.',
+  twitterImage: 'https://repo-booster.com/social-card.png',
+  twitterCard: 'summary_large_image'
 })
 </script>
 

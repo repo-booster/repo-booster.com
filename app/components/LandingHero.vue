@@ -1,21 +1,19 @@
 <script setup lang="ts">
-
 const links = [
   {
     label: 'Continue with GitHub',
     to: 'https://github.com/apps/repo-booster',
     icon: 'i-simple-icons-github',
     color: 'gray',
-    size: 'lg',
-  },
-];
-
+    size: 'lg'
+  }
+]
 </script>
 
 <template>
   <ULandingHero
     title="Boost Your GitHub Experience"
-    description="Achieve 90% faster growth for your projects with our guaranteed our repository enhancement tools."
+    description="Achieve 90% faster growth for your projects with our guaranteed repository enhancement tools."
     orientation="vertical"
     :links="links"
   >
@@ -30,12 +28,23 @@ const links = [
       />
     </template>
     <template #default>
-      <img
-        src="/landing.webp"
-        alt="An engaging visual representation of the landing page"
-        class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700 floating-image"
-        loading="lazy"
-      />
+      <!-- Arcade Embed Start -->
+      <div
+        style="position: relative; padding-bottom: calc(50.520833333333336% + 41px); height: 0; width: 100%;"
+      >
+        <iframe>
+          src="https://demo.arcade.software/MLKlmdtVFAPa5s52JVRN?embed&embed_mobile=inline&embed_desktop=inline&show_copy_link=true"
+          title="Repo-Booster - Dashboard"
+          frameborder="0"
+          loading="lazy"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          allow="clipboard-write"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;"
+        </iframe>
+      </div>
+      <!-- Arcade Embed End -->
     </template>
   </ULandingHero>
 </template>

@@ -53,7 +53,7 @@ sections:
         icon: i-heroicons-chart-bar
       - name: Social Media Automation
         description: Use our custom ai bots to generate personalized posts for your projects and share them effortlessly.
-        icon: i-heroicons-Share
+        icon: i-heroicons-share
       - name: Star Growth Tracking
         description: Set goals and track your repositorys growth in real time.
         icon: i-heroicons-star
@@ -78,8 +78,8 @@ features:
   description: Repo-Booster integrates seamlessly integrating the GitHub API and other platforms to automate growth tasks and insights.
   items:
     - title: Repository SEO Analysis
-      description: The SEO analysis tool evaluates your repository’s structure, metadata, and content for SEO performance. It highlights areas of improvement to help your project rank higher on search engines and be more discoverable on GitHub.
-      icon: i-heroicons-Document-magnifying-glass
+      description: The SEO analysis tool evaluates your repositorys structure, metadata, and content for SEO performance. It highlights areas of improvement to help your project rank higher on search engines and be more discoverable on GitHub.
+      icon: i-heroicons-magnifying-glass
     - title: Readme SEO Scanner
       description: This feature analyzes your README file to identify SEO opportunities, readability issues, and overall quality. It provides AI-powered recommendations for optimizing the file.
       icon: i-heroicons-book-open

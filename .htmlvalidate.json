@@ -1,0 +1,14 @@
+{
+    "rules": {
+      "wcag/h30": "error",
+      "no-implicit-button-type": "error",
+      "no-deprecated-attr": "error",
+      "no-redundant-role": "error"
+    },
+    "elements": [
+      {
+        "iframe": { "deprecatedAttributes": ["frameborder"] }
+      }
+    ]
+  }
+  

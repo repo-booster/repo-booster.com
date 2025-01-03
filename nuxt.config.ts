@@ -13,7 +13,10 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     '@nuxtjs/tailwindcss',
-    '@nuxt/devtools'
+    '@nuxt/devtools',
+    '@nuxtjs/html-validator',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/seo'
   ],
 
   devtools: {
