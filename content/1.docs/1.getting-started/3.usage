@@ -9,7 +9,7 @@ Repo-Booster is a powerful tool designed to enhance your GitHub repositories' vi
 ---
 icon: i-heroicons-light-bulb
 target: _blank
-to: https://repo-booster.com/docs/usage
+to: https://repo-booster.com/docs/
 ---
 Learn more about configuring Repo-Booster for maximum impact!
 ::
@@ -47,7 +47,7 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       icon: 'i-simple-icons-github',
-      to: 'https://github.com/Gerome-Elassaad/repo-booster',
+      to: 'https://github.com/repo-booster/repo-booster',
       target: '_blank',
       'aria-label': 'Star on GitHub'
     }]
@@ -79,7 +79,7 @@ export default defineAppConfig({
       'aria-label': 'Repo-Booster on X'
     }, {
       icon: 'i-simple-icons-github',
-      to: 'https://github.com/Gerome-Elassaad/repo-booster',
+      to: 'https://github.com/repo-booster/repo-booster',
       target: '_blank',
       'aria-label': 'Repo-Booster GitHub'
     }]

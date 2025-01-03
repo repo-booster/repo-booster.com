@@ -8,31 +8,31 @@ function mapContentNavigation(navItems: Ref<NavItem[]> | undefined): NavItem[] {
   return (navItems?.value || []).map(item => ({
     label: item.title,
     to: item.path,
-    icon: item.icon || 'i-simple-icons-link',
+    icon: item.icon || 'i-simple-icons-link'
   }))
 }
 
-const links: Array<{ label: string; to: string; icon: string }> = [
+const links: Array<{ label: string, to: string, icon: string }> = [
   {
     label: 'Docs',
     to: '/docs',
-    icon: 'i-heroicons-book-open',
+    icon: 'i-heroicons-book-open'
   },
   {
     label: 'Pricing',
     to: '/pricing',
-    icon: 'i-heroicons-credit-card',
+    icon: 'i-heroicons-credit-card'
   },
   {
     label: 'Download',
     to: '/pricing',
-    icon: 'i-heroicons-arrow-down-on-square',
+    icon: 'i-heroicons-arrow-down-on-square'
   },
   {
     label: 'Blog',
     to: '/blog',
-    icon: 'i-heroicons-chat-bubble-left',
-  },
+    icon: 'i-heroicons-chat-bubble-left'
+  }
 ]
 </script>
 
@@ -40,7 +40,11 @@ const links: Array<{ label: string; to: string; icon: string }> = [
   <UHeader :links="links">
     <template #logo>
       Repo-Booster
-      <UBadge label="Pro" variant="subtle" class="mb-0.5" />
+      <UBadge
+        label="Pro"
+        variant="subtle"
+        class="mb-0.5"
+      />
     </template>
 
     <template #right>

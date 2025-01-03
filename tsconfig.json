@@ -1,8 +1,4 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json",
-    "compilerOptions": {
-      "types": ["@nuxt/ui-pro", "@nuxt/types", "@nuxt/content"]
-    },
-    "include": ["**/*.ts", "**/*.d.ts", "**/*.vue"]
-  }
+  "extends": "./.nuxt/tsconfig.json"
+}

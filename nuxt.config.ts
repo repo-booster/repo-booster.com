@@ -1,6 +1,6 @@
-/* eslint-disable no-undef */
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
   extends: ['@nuxt/ui-pro'],
 
   modules: [
@@ -25,6 +25,10 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: 'dark'
+  }, runtimeConfig: {
+    public: {
+      myValue: process.env.OTHER_ENV_VAR
+    }
   },
 
   routeRules: {
@@ -40,10 +44,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: [
-        '/',
-        '/docs'
-      ],
+      routes: ['/', '/docs', '/pricing', '/blog'],
       crawlLinks: true
     }
   },
@@ -57,7 +58,7 @@ export default defineNuxtConfig({
     'components:extend': (components) => {
       const globals = components.filter(c => ['UButton'].includes(c.pascalName))
 
-      globals.forEach(c => c.global = true)
+      globals.forEach(c => (c.global = true))
     }
   },
 
