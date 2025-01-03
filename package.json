@@ -1,6 +1,6 @@
 {
   "name": "repo-booster",
-  "private": true,
+  "private": false,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
