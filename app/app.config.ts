@@ -1,5 +1,3 @@
-import { defineAppConfig } from 'nuxt/app'
-
 export default defineAppConfig({
   ui: {
     primary: 'green',
@@ -47,10 +45,6 @@ export default defineAppConfig({
         },
         closeButton: {
           icon: 'i-ph-x'
-        },
-        // Added hover and focus states for the command palette menu
-        item: {
-          base: 'px-4 py-2 rounded-lg transition hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'
         }
       }
     },
@@ -80,10 +74,7 @@ export default defineAppConfig({
       }
     },
     card: {
-      rounded: 'rounded-xl',
-      shadow: 'shadow-lg',
-      hover: 'hover:shadow-2xl hover:bg-gray-100 dark:hover:bg-gray-900 transition-transform transform hover:scale-105',
-      focus: 'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'
+      rounded: 'rounded-xl'
     },
     tooltip: {
       background: '!bg-background',
@@ -175,6 +166,7 @@ export default defineAppConfig({
         }
       }
     },
+
     colorPicker: {
       slots: {
         root: 'data-[disabled]:opacity-75',
