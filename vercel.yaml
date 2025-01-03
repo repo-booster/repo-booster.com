@@ -1,0 +1,31 @@
+version: 3
+
+builds:
+  - src: package.json
+    use: '@vercel/static-build'
+    config:
+      distDir: '.output/public'
+
+routes:
+  # Serve the server-side Nuxt app
+  - src: '/(.*)'
+    dest: '/'
+
+env:
+  NODE_ENV: 'production'
+
+framework: 'nuxt'
+
+# Specify custom build commands
+buildCommand: 'pnpm run build'
+
+functions:
+  api/search.json:
+    runtime: 'nodejs18.x'
+
+# Include aliases to avoid runtime alias issues
+settings:
+  framework: 'nuxt'
+  nodeVersion: '18.x'
+  installCommand: 'pnpm install --frozen-lockfile'
+  outputDirectory: '.output/public'
