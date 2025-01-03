@@ -34,21 +34,17 @@
     "tailwindcss": "^3.4.17",
     "ufo": "^1.5.4",
     "vue-toastification": "^2.0.0-rc.5",
-    "vue3-smooth-dnd": "^0.0.6",
-    "@nuxt/types": "^2.18.1"
+    "vue3-smooth-dnd": "^0.0.6"
   },
   "devDependencies": {
     "@iconify-json/ph": "^1.2.2",
     "@nuxt/eslint": "^0.7.4",
     "@nuxt/ui-pro": "^1.6.0",
     "@nuxthq/studio": "^2.2.1",
+    "@nuxt/types": "^2.18.1",
     "eslint": "^9.17.0",
     "typescript": "^5.7.2",
     "vue-tsc": "^2.2.0"
-  },
-  "engines": {
-    "node": ">=22.12.0"
-    "pnpm": ">=9.15.0"
   },
   "packageManager": "pnpm@9.15.1"
 }
