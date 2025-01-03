@@ -68,16 +68,23 @@ useSeoMeta({
     </ULandingSection>
 
     <ULandingSection
-      :title="page.features.title"
-      :description="page.features.description"
+      v-if="page.sections.find(section => section.id === 'command-menus')"
+      :title="page.sections.find(section => section.id === 'command-menus').title"
+      :description="page.sections.find(section => section.id === 'command-menus').description"
+      align="center"
     >
       <UPageGrid>
         <ULandingCard
-          v-for="(item, index) in page.features.items"
+          v-for="(feature, index) in page.sections.find(section => section.id === 'command-menus').features"
           :key="index"
-          v-bind="item"
+          v-bind="feature"
         />
       </UPageGrid>
+      <template #demo>
+        <p>
+          Explore the interactive command menu functionality to see how effortless navigation can be.
+        </p>
+      </template>
     </ULandingSection>
 
     <ULandingSection
